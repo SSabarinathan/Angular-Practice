@@ -1,0 +1,41 @@
+<br />
+<div class="pipe_position">
+  <h2>Pipe Types!</h2>
+  <br />
+  <h2>Date</h2>
+  <h3>{{ day }}---whole day</h3>
+  <h3>{{ day | date }} ---Only date</h3>
+  <h3>Date: {{ day | date : "dd / MM / YYYY" }} --date with the format</h3>
+  <br />
+  <h2>Number</h2>
+  <h2>Number : {{ num }}</h2>
+  <h2>Number : {{ num | number }}</h2>
+  <h2>Number : {{ num | number : "6.3-4" }}</h2>
+  <h2>Number : {{ num1 | number : "0.0-0" }}</h2>
+  <br />
+  <h2>Percentage</h2>
+  <h2>Percent : {{ per | percent }}</h2>
+  <h2>Percent : {{ per | percent : "0.2-2" }}</h2>
+  <br />
+  <h2>Currency</h2>
+  <h2>Number : {{ num | currency }}</h2>
+  <h2>Number : {{ num | currency : "CAD" }}</h2>
+  <h2>Number : {{ num | currency : "INR" }}</h2>
+  <h2>Number : {{ num | currency : "INR" : "code" }}</h2>
+  <br />
+  <h2>UpperCase</h2>
+  <h2>Name : {{ name | uppercase }}</h2>
+  <h2>Name : {{ name | titlecase }}</h2>
+
+  <br />
+
+  <h2>JSON</h2>
+  <h2>Object Data: {{ obj | json }}--- to view the object</h2>
+
+  <h2>Array : {{ arr | slice : 1 }}-- slice the array</h2>
+
+  <h2>Key value pair : {{ obj | keyvalue | json }}---for array convertion</h2>
+
+  <!-- creating own pipes by appending  -->
+  <h2>{{ greet | append }}</h2>
+</div>

@@ -1,0 +1,82 @@
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: blueviolet;
+}
+h2 {
+  text-align: center;
+  font-style: italic;
+  color: teal;
+}
+h3 {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+}
+.wrapper {
+  background-color: thistle;
+}
+
+.app-component {
+  text-align: center;
+  border: #bbb 2px solid;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 38px;
+  margin-left: 10px;
+  margin-right: 18px;
+}
+
+.component-container {
+  display: flex;
+  text-align: center;
+}
+
+.container {
+  width: 720px;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: aquamarine;
+  display: flex;
+}
+.box {
+  padding-left: 500px;
+  margin-left: 500px;
+}
+.event {
+  margin-left: 850px;
+}
+
+.content {
+  border: 2px solid darkcyan;
+}
+
+:host h5 {
+  color: chartreuse;
+}
+
+/* //for table design */
+
+table
+{
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  border-collapse: collapse;
+}
+td{
+  border: 1px solid black;
+}
+thead{
+  border: 1px solid black;
+}
+.attribute_binding{
+  margin-left: 820px;
+
+}
+.template_reference_variable
+{
+  margin-left: 750px;
+
+
+}
