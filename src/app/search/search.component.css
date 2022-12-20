@@ -1,6 +1,14 @@
-input[type=text]{
-    width: 240px;
-    height: 30px;
-    margin-left: 20px;
-    border: none;
+input[type="text"] {
+  width: 240px;
+  height: 30px;
+  margin-left: 20px;
+  border: none;
+}
+
+.changeBackground {
+  background-color: orange;
+  color: aqua;
+}
+.defaultBg {
+  background-color: yellow;
 }

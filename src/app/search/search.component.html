@@ -1,12 +1,47 @@
 <div class="search-div">
-    <span><b>Search :</b></span>
-    <input type="text" (input)="changeSearchValue($event)">
-     <!--event binding It stores the particular data based on the event -->
+  <span><b>Search :</b></span>
+  <input type="text" (input)="changeSearchValue($event)" />
+  <!--event binding It stores the particular data based on the event -->
 
-    <input type="text" (input)="changeSearchValue($event)">
-    <pre> </pre> <span>You searched for : " {{searchValue}} "</span>
+  <!-- <input type="text" (input)="changeSearchValue($event)"> -->
+  <pre></pre>
+  <span>You searched for : " {{ searchValue }} "</span>
 
-    <!-- <input type="text" [([(ngModel)]="searchValue")]"> -->
+  <!-- <input type="text" [(ngModel)]="searchValue"> -->
+
+  <h2>NgClass</h2>
+  <h2>You can search here!</h2>
+
+  <!-- <div class="search-div" [ngClass]="{ changeBackground: searchValue != '' }">
+    <input type="text" [(ngModel)]="searchValue" />
+    <h3>Colour invokes when the condition applied</h3>
+
+    <br /><br />
+  </div> -->
+  <div
+    class="search-div"
+    [ngClass]="!!searchValue ? 'changeBackground' : 'defaultBg'"
+  >
+    <input type="text" [(ngModel)]="searchValue" />
+    <h3>Colour invokes when the condition applied</h3>
+
+    <br /><br />
+  </div>
+
+  <br /><br />
+  <!-- <div
+    [ngStyle]="{ border: condition ? '10px solid green' : '20px solid red' }"
+  >
+    ngStyle Example
+  </div> -->
 
 
-</div>
+
+  <div
+    [ngStyle]="style">
+    ngStyle Example
+  </div>
+  <br /><br />
+  <!-- /////////////////////////////////////////////////////////// -->
+  <h2>ngModel Example</h2>
+  </div>
